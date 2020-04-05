@@ -58,8 +58,49 @@ class Address {
 
 class ShoppingCart {
     var orderTShirt: Array<Any>
-
+    
     init(orderTShirt: Array<Any>) {
         self.orderTShirt = orderTShirt
     }
 }
+
+/*class Totalcost {
+    var cost1: Float
+    var cost2: Float
+    var cost3: Float
+    
+    init(cost1: Float,
+         cost2: Float,
+         cost3: Float) {
+        self.cost1 = cost1
+        self.cost2 = cost2
+        self.cost3 = cost3
+    }
+}*/
+
+
+
+var orderTShirt  = Tshirt(size: "L",
+                          color: "Red",
+                          cost: 500,
+                          image: "")
+var orderTShirt2 = Tshirt(size: "M",
+                          color: "Black",
+                          cost: 750,
+                          image: "")
+var orderTShirt3 = Tshirt(size: "S",
+                          color: "Black",
+                          cost: 625,
+                          image: "")
+
+var userInfo = User(name: "jame watson",
+                    email: "jame@gmail.com",
+                    shoppingCart: [1])
+
+var address = Address(street: "พุทธมณฑล",
+                      city: "นครปฐม",
+                      zipCode: "10180")
+
+
+print("Total cost:", 500 + 750 + 625)
+
